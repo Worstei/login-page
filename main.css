@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Zen Loop', cursive;
+}
+.wrapper{
+    display: flex;
+    min-height: 100vh;
+}
+.leftside{
+    width: 40%;
+    /* background-image:url("./obraz\ klimt.webp") ; */
+    background:linear-gradient(0deg, rgba(194, 181, 4, 0.746), rgba(236, 218, 61, 0.637)), url(./obraz\ klimt.webp);
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lefttitle{
+    color: white;
+    font-size:110px;
+}
+.leftdesc{
+    color: white;
+    font-weight: 700;
+    font-size:20px ;
+    margin-top:20px ;
+}
+.leftbox{
+    width: 88%;
+}
+.leftmindesc{
+    color: white;
+    font-weight: 700;
+    margin-top: 70px;
+}
+.btn{
+    margin-top: 10px;
+    height: 40px;
+    padding:0 10px ;
+    border-radius: 20px;
+    border: 0;
+    min-width:90px;
+}
+.klasaa{
+    color: white;
+    text-decoration: none;
+}
+.btnprimary{
+background-color: rgba(0, 48, 204, 0.555);
+margin-right: 25px;
+transition: 0.4s;
+}
+.btnprimary:hover{
+    background-color: rgba(0, 15, 68, 0.555);
+}
+.btnsecondary{
+    background-color: rgba(0, 139, 231, 0.555);
+    transition: 0.4s;
+}
+.btnsecondary:hover{
+    background-color: rgb(5, 56, 90);
+}
+.btnsecondary i{
+    margin-right: 8px;
+}
+/* ............................ */
+.rightside{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.rightbox{
+width: 70%;
+margin-top: 100px;
+}
+.righttitle{
+    font-size: 36px;
+}
+.rightdesc{
+    margin:15px 0 ;
+}
+.a{
+    color:rgba(0, 139, 231, 0.52) ;
+    text-decoration: none;
+}
+.rightform{
+    display: flex;
+    flex-direction: column;
+}
+.filed{
+    border: none;
+border-bottom: 2px solid rgba(0, 0, 0, 0.616);
+padding-bottom: 5px;
+margin-top: 30px;
+font-size: 16px;
+}
+.check{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.check > a{
+    color: rgba(0, 139, 231, 0.52);
+    text-decoration: none;
+}
+.btnsubmit{
+    background-color: rgba(209, 195, 5, 0.849) ;
+    width: 160px;
+    margin-top: 30px;
+    box-shadow:0 8px 15px 2px rgba(175, 164, 4, 0.849) ;
+    margin-left: auto;
+    transition: 00.4s;
+}
+.btnsubmit:hover{
+    background-color: rgba(141, 132, 0, 0.849) ;  
+}
+
+
+@media(max-width:992px){
+.lefttitle{
+ font-size: 80px;
+}
+}
+@media(max-width:576px){
+.wrapper{
+    flex-direction:column;
+}
+.leftside{
+    width: 100%;
+    padding: 25px;
+}
+.rightside{
+    width: 100%;
+    padding: 25px;
+}
+}
